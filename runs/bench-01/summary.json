@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "time": "2026-11-16T10:51:18",
+    "model": "qwen-cn/deepseek-v4.1-flash-1017",
+    "base_url": "http://127.0.0.1:3425/v1",
+    "temperature": 0.0,
+    "max_tokens": 512,
+    "voice_lang": "804",
+    "voice_id": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Speech\\Voices\\Tokens\\TTS_MS_ZH-CN_HUIHUI_11.0",
+    "tts_concurrency": 2,
+    "pause_threshold_s": 0.15,
+    "max_sentence_len": 80,
+    "fixed_window": 20,
+    "serial": true,
+    "shared_llm_stream": true,
+    "arms": [
+      "full",
+      "stream",
+      "fixed"
+    ],
+    "n_questions": 12
+  },
+  "summary": {
+    "arms": {
+      "fixed": {
+        "n": 12,
+        "ttfa_p50_s": 3.412,
+        "ttfa_mean_s": 3.436,
+        "ttfa_max_s": 5.127,
+        "makespan_p50_s": 48.528,
+        "makespan_mean_s": 48.011,
+        "pauses_mean": 0.0,
+        "pauses_total": 0,
+        "segments_mean": 8.17,
+        "chars_mean": 151.5,
+        "audio_total_mean_s": 44.58,
+        "idle_mean_s": 3.44,
+        "llm_total_mean_s": 3.84,
+        "llm_ttft_p50_s": 3.089,
+        "tokens_in": 782,
+        "tokens_out": 3692,
+        "tokens_per_q": 373,
+        "fidelity_all_ok": true
+      },
+      "full": {
+        "n": 12,
+        "ttfa_p50_s": 4.028,
+        "ttfa_mean_s": 4.243,
+        "ttfa_max_s": 6.305,
+        "makespan_p50_s": 43.049,
+        "makespan_mean_s": 43.379,
+        "pauses_mean": 0.0,
+        "pauses_total": 0,
+        "segments_mean": 1.0,
+        "chars_mean": 151.5,
+        "audio_total_mean_s": 39.14,
+        "idle_mean_s": 4.24,
+        "llm_total_mean_s": 3.84,
+        "llm_ttft_p50_s": 3.089,
+        "tokens_in": 782,
+        "tokens_out": 3692,
+        "tokens_per_q": 373,
+        "fidelity_all_ok": true
+      },
+      "stream": {
+        "n": 12,
+        "ttfa_p50_s": 3.328,
+        "ttfa_mean_s": 3.525,
+        "ttfa_max_s": 5.107,
+        "makespan_p50_s": 43.113,
+        "makespan_mean_s": 42.82,
+        "pauses_mean": 0.0,
+        "pauses_total": 0,
+        "segments_mean": 3.92,
+        "chars_mean": 151.5,
+        "audio_total_mean_s": 39.29,
+        "idle_mean_s": 3.53,
+        "llm_total_mean_s": 3.84,
+        "llm_ttft_p50_s": 3.089,
+        "tokens_in": 782,
+        "tokens_out": 3692,
+        "tokens_per_q": 373,
+        "fidelity_all_ok": true
+      }
+    },
+    "by_tier": {
+      "short": {
+        "fixed": {
+          "n": 3,
+          "ttfa_p50_s": 2.836,
+          "ttfa_mean_s": 2.837,
+          "makespan_mean_s": 20.81,
+          "pauses_mean": 0.0
+        },
+        "full": {
+          "n": 3,
+          "ttfa_p50_s": 2.954,
+          "ttfa_mean_s": 3.116,
+          "makespan_mean_s": 18.73,
+          "pauses_mean": 0.0
+        },
+        "stream": {
+          "n": 3,
+          "ttfa_p50_s": 3.196,
+          "ttfa_mean_s": 3.013,
+          "makespan_mean_s": 18.62,
+          "pauses_mean": 0.0
+        }
+      },
+      "medium": {
+        "fixed": {
+          "n": 4,
+          "ttfa_p50_s": 3.611,
+          "ttfa_mean_s": 3.493,
+          "makespan_mean_s": 45.81,
+          "pauses_mean": 0.0
+        },
+        "full": {
+          "n": 4,
+          "ttfa_p50_s": 4.05,
+          "ttfa_mean_s": 4.271,
+          "makespan_mean_s": 41.91,
+          "pauses_mean": 0.0
+        },
+        "stream": {
+          "n": 4,
+          "ttfa_p50_s": 3.651,
+          "ttfa_mean_s": 3.602,
+          "makespan_mean_s": 41.24,
+          "pauses_mean": 0.0
+        }
+      },
+      "long": {
+        "fixed": {
+          "n": 5,
+          "ttfa_p50_s": 3.59,
+          "ttfa_mean_s": 3.749,
+          "makespan_mean_s": 66.09,
+          "pauses_mean": 0.0
+        },
+        "full": {
+          "n": 5,
+          "ttfa_p50_s": 5.202,
+          "ttfa_mean_s": 4.897,
+          "makespan_mean_s": 59.35,
+          "pauses_mean": 0.0
+        },
+        "stream": {
+          "n": 5,
+          "ttfa_p50_s": 3.445,
+          "ttfa_mean_s": 3.772,
+          "makespan_mean_s": 58.6,
+          "pauses_mean": 0.0
+        }
+      }
+    },
+    "pairs": {
+      "fixed_vs_full": {
+        "n": 12,
+        "gain_mean_s": 0.807,
+        "gain_p50_s": 0.779,
+        "negative_count": 1
+      },
+      "stream_vs_full": {
+        "n": 12,
+        "gain_mean_s": 0.717,
+        "gain_p50_s": 0.641,
+        "negative_count": 1
+      }
+    }
+  }
+}

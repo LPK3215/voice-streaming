@@ -1,0 +1,17 @@
+# 密钥与本地状态
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 本机路径与缓存
+.idea/
+.vscode/
+
+# 实验产物：默认不入库；权威 run 目录点名放行
+runs/*
+!runs/README.md
+!runs/bench-01/
+!runs/bench-01/**
+runs/bench-01/audio/

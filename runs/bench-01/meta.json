@@ -1,0 +1,21 @@
+{
+  "time": "2026-11-16T10:51:18",
+  "model": "qwen-cn/deepseek-v4.1-flash-1017",
+  "base_url": "http://127.0.0.1:3425/v1",
+  "temperature": 0.0,
+  "max_tokens": 512,
+  "voice_lang": "804",
+  "voice_id": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Speech\\Voices\\Tokens\\TTS_MS_ZH-CN_HUIHUI_11.0",
+  "tts_concurrency": 2,
+  "pause_threshold_s": 0.15,
+  "max_sentence_len": 80,
+  "fixed_window": 20,
+  "serial": true,
+  "shared_llm_stream": true,
+  "arms": [
+    "full",
+    "stream",
+    "fixed"
+  ],
+  "n_questions": 12
+}
